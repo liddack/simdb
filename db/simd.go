@@ -175,8 +175,8 @@ func (d *Driver) Raw() interface{} {
 
 //RawArray will return the data in map array type
 func (d *Driver) RawArray() []interface{} {
-	fmt.Println("calling rawarray")
-	fmt.Printf("%#v\n", d.jsonContent)
+	//fmt.Println("calling rawarray")
+	//fmt.Printf("%#v\n", d.jsonContent)
 	if aa, ok := d.jsonContent.([]interface{}); ok {
 		return aa
 	}
